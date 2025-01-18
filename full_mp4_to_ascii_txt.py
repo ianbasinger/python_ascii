@@ -3,8 +3,8 @@ from PIL import Image
 import os
 
 # Parameters
-video_path = r"C:\Users\ianba\Desktop\Python Projects\signalis.mp4"
-output_dir = r"C:\Users\ianba\Desktop\Python Projects\res"
+video_path = r"%inputpath%"
+output_dir = r"%inputpath%"
 ascii_chars = "@%#*+=-:. "
 frame_width = 80  # Width of ASCII output
 
