@@ -1,10 +1,10 @@
 import cv2
 from PIL import Image
 
-video_path = r"C:\Users\ianba\Desktop\C Projects\C ASCII FFMPEG\C ASCII 2\bad_apple.mp4"
+video_path = r"%inputpath%"
 cap = cv2.VideoCapture(video_path)
 
-output_dir = r"C:\Users\ianba\Desktop\C Projects\C ASCII FFMPEG\C ASCII 2\res"
+output_dir = r"%outputpath%"
 frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
 if not cap.isOpened():
