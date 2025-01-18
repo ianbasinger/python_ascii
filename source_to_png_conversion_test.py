@@ -11,7 +11,7 @@ if not cap.isOpened():
     print("Error: Unable to open video file.")
     exit()
 
-for i in range(100):  # Save the first 10 frames
+for i in range(100):
     ret, frame = cap.read()
     if not ret:
         print(f"Error: Could not read frame {i + 1}")
