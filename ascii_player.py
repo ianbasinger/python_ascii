@@ -4,7 +4,7 @@ from colorama import Fore, init
 
 init()
 
-directory = r"C:\Users\ianba\Desktop\Python Projects\res"
+directory = r"%directory here%"
 file_prefix = "frame_"
 file_extension = ".txt"
 total_frames = 6577
@@ -51,12 +51,12 @@ def play_frames(directory, total_frames):
 		time.sleep(wait_time)
 
 def main():
-	print("C Project - '[Touhou] Bad Apple!! PV [Shadow] - [ASCII]'")
+	print("")
 	input("Press Enter to start playback...")
 	print(f"Total frames: {total_frames}")
 	input("Press Enter to play...")
 	play_frames(directory, total_frames)
-	print("Animation playback completed.")
+	print("Animation playback completed!")
 
 if __name__ == "__main__":
 	main()
