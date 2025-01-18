@@ -11,3 +11,6 @@ Converts the source .mp4 file to individual .png files (frames)
 Converts the .png frames to .txt ASCII representation
 
 ffmpeg, python/pip, colorama are required.
+
+# Example Usage
+https://github.com/user-attachments/assets/7c28a6bb-3461-415c-892d-84e98a7168a0
