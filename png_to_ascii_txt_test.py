@@ -1,18 +1,18 @@
 from PIL import Image
 
-ascii_chars = "@%#*+=-:. "  # Ensure at least 10 characters
-frame_path = r"C:\Users\ianba\Desktop\C Projects\C ASCII FFMPEG\C ASCII 2\res\frame_94.png"  # Replace with actual path
+ascii_chars = "@%#*+=-:. "
+frame_path = r"%inputpath%\frame_94.png" 
 
 def image_to_ascii(image, width):
     """Convert an image to ASCII art."""
-    image = image.convert("L")  # Convert to grayscale
+    image = image.convert("L")
     aspect_ratio = image.height / image.width
     new_height = int(aspect_ratio * width * 0.55)
     image = image.resize((width, new_height))
 
     ascii_art = ""
     for pixel in image.getdata():
-        pixel = max(0, min(255, pixel))  # Ensure pixel values are within 0-255
+        pixel = max(0, min(255, pixel))
         ascii_art += ascii_chars[min(len(ascii_chars) - 1, pixel // 25)]
 
     ascii_art = '\n'.join(
@@ -20,7 +20,6 @@ def image_to_ascii(image, width):
     )
     return ascii_art
 
-# Load and test ASCII conversion
 image = Image.open(frame_path)
-ascii_result = image_to_ascii(image, 80)  # Adjust width if needed
+ascii_result = image_to_ascii(image, 80)
 print(ascii_result)
