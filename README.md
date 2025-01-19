@@ -13,4 +13,4 @@ Converts the .png frames to .txt ASCII representation
 ffmpeg, python/pip, colorama are required.
 
 # Example Usage
-https://github.com/user-attachments/assets/7c28a6bb-3461-415c-892d-84e98a7168a0
+https://github.com/user-attachments/assets/cde065bc-cf37-476e-ad6d-a7b678cc85f6
