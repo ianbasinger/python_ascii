@@ -4,7 +4,6 @@ ascii_chars = "@%#*+=-:. "
 frame_path = r"%inputpath%\frame_94.png" 
 
 def image_to_ascii(image, width):
-    """Convert an image to ASCII art."""
     image = image.convert("L")
     aspect_ratio = image.height / image.width
     new_height = int(aspect_ratio * width * 0.55)
