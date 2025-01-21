@@ -82,9 +82,9 @@ def f_proc(frame_number, frame):
             print(f"\nError processing frame {frame_number}: {e}")
 
 def anim(f_cached):
-    frame_interval = 1 / 24  # Adjust frame rate here (e.g., 24 FPS)
+    frame_interval = 1 / 30
     for frame in f_cached:
-        sys.stdout.write("\033[H")  # Move cursor to the top
+        sys.stdout.write("\033[H")
         sys.stdout.write(frame)
         sys.stdout.flush()
         time.sleep(frame_interval)
