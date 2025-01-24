@@ -1,4 +1,3 @@
-# full_mp4_to_ascii_txt.py
 Converts source .mp4 to .txt files in ASCII
 
 # Example Usage
